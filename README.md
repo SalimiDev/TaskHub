@@ -10,6 +10,7 @@ A modern task management application built with Next.js, helping you organize an
 - 📱 Responsive design for all devices
 - 🌙 Dark/Light mode support
 - 🔒 User authentication and data persistence
+- 🌐 Multilingual support with next-intl (default locale without prefix)
 
 ## Tech Stack
 
