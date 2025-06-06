@@ -1,0 +1,31 @@
+{
+  "Common": {
+    "loading": "در حال بارگذاری...",
+    "error": "خطایی رخ داده است",
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "close": "بستن"
+  },
+  "Navigation": {
+    "home": "خانه",
+    "tasks": "وظایف",
+    "profile": "پروفایل",
+    "settings": "تنظیمات"
+  },
+  "Home": {
+    "title": "به TaskHub خوش آمدید",
+    "description": "وظایف خود را به صورت مؤثر مدیریت کنید"
+  },
+  "Tasks": {
+    "title": "وظایف",
+    "createNew": "ایجاد وظیفه جدید",
+    "noTasks": "هیچ وظیفه‌ای یافت نشد",
+    "status": {
+      "pending": "در انتظار",
+      "inProgress": "در حال انجام",
+      "completed": "تکمیل شده"
+    }
+  }
+}

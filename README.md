@@ -1,8 +1,20 @@
 # TaskHub
 
-A modern task management application built with Next.js, helping you organize and track your tasks efficiently.
+A modern task management application boilerplate built with Next.js 15, TypeScript, and internationalization support.
 
-## Features
+## 🚧 Current Status
+
+This project is currently in **initial setup phase**. The foundation has been laid with:
+
+- ✅ Next.js 15 with App Router
+- ✅ TypeScript configuration
+- ✅ Tailwind CSS for styling
+- ✅ Internationalization (i18n) with next-intl
+- ✅ Project structure and folder organization
+- ✅ Development tooling (ESLint, Prettier, Husky)
+- ✅ English and Persian (Farsi) language support
+
+## 🎯 Planned Features
 
 - 📝 Create, edit, and delete tasks
 - 🏷️ Organize tasks with categories and tags
@@ -10,16 +22,18 @@ A modern task management application built with Next.js, helping you organize an
 - 📱 Responsive design for all devices
 - 🌙 Dark/Light mode support
 - 🔒 User authentication and data persistence
+- 🌐 Multilingual support (EN/FA)
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org/) - React framework for production
-- TypeScript for type safety
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-- [Shadcn UI](https://ui.shadcn.com/) for components
-- [Zustand](https://zustand-demo.pmnd.rs/) for state management
+- **Framework:** [Next.js 15](https://nextjs.org/) with App Router
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Internationalization:** [next-intl](https://next-intl-docs.vercel.app/)
+- **Development Tools:** ESLint, Prettier, Husky, lint-staged
+- **Package Manager:** pnpm
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -41,53 +55,127 @@ cd TaskHub
 pnpm install
 ```
 
-3. Run the development server:
+3. Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-## Development
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a custom font for better typography.
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 TaskHub/
+├── docs/                 # Documentation files
+│   └── i18n-guide.md    # Internationalization guide
+├── messages/            # i18n message files
+│   ├── en.json         # English translations
+│   └── fa.json         # Persian translations
+├── public/             # Static assets
 ├── src/
-│   ├── app/           # Next.js app router pages
-│   ├── components/    # Reusable UI components
-│   ├── hooks/         # Custom React hooks
-│   ├── lib/          # Utility functions and configurations
-│   └── store/        # State management
-├── public/           # Static assets
+│   ├── app/           # Next.js App Router
+│   │   ├── [locale]/  # Internationalized routes
+│   │   │   ├── (auth)/      # Authentication routes (planned)
+│   │   │   ├── (protected)/ # Protected routes (planned)
+│   │   │   └── (todoList)/  # Task management routes (planned)
+│   │   └── api/       # API routes (planned)
+│   ├── components/    # React components
+│   │   ├── layout/    # Layout components (planned)
+│   │   └── ui/        # UI components (planned)
+│   ├── configs/       # Configuration files (planned)
+│   ├── data/          # Data layer (planned)
+│   ├── hooks/         # Custom React hooks (planned)
+│   ├── lib/          # Utility libraries
+│   │   ├── constants/ # Application constants (planned)
+│   │   ├── i18n/     # Internationalization utilities ✅
+│   │   ├── utils/    # Utility functions (planned)
+│   │   └── validators/ # Form validation schemas (planned)
+│   ├── providers/    # React context providers
+│   ├── store/        # State management (planned)
+│   └── types/        # TypeScript type definitions (planned)
+├── components.json    # shadcn/ui configuration
 └── ...config files
 ```
 
-## Learn More
+## 🌐 Internationalization
 
-To learn more about the technologies used in this project:
+The project supports multiple languages:
 
-- [Next.js Documentation](https://nextjs.org/docs) - Next.js features and API
-- [Learn Next.js](https://nextjs.org/learn) - Interactive Next.js tutorial
-- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework
-- [Shadcn UI](https://ui.shadcn.com/) - Re-usable components
+- **English (en)** - Default language
+- **Persian/Farsi (fa)** - RTL support ready
 
-## Deployment
+### Available Routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/en` - English version
+- `/fa` - Persian version
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For detailed i18n documentation, see [docs/i18n-guide.md](docs/i18n-guide.md).
 
-## Contributing
+## 🔧 Available Scripts
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+```bash
+# Development
+pnpm dev          # Start development server with Turbopack
 
-## License
+# Building
+pnpm build        # Build for production
+pnpm start        # Start production server
+
+# Code Quality
+pnpm lint         # Run ESLint
+```
+
+## 🚧 Development Roadmap
+
+### Phase 1: Foundation (✅ Completed)
+
+- [x] Project setup and configuration
+- [x] Internationalization setup
+- [x] Development tooling
+
+### Phase 2: UI Components (In Progress)
+
+- [ ] Design system with shadcn/ui
+- [ ] Layout components
+- [ ] Form components
+- [ ] Navigation components
+
+### Phase 3: Core Features (Planned)
+
+- [ ] Task management functionality
+- [ ] User authentication
+- [ ] State management
+- [ ] API integration
+
+### Phase 4: Advanced Features (Planned)
+
+- [ ] Dark/Light mode
+- [ ] Data persistence
+- [ ] Categories and tags
+- [ ] Due dates and reminders
+
+## 📚 Documentation
+
+- [Internationalization Guide](docs/i18n-guide.md)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [next-intl Documentation](https://next-intl-docs.vercel.app/)
+
+## 🤝 Contributing
+
+This project is in early development. Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Follow the existing code style
+4. Add appropriate documentation
+5. Submit a pull request
+
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+**Note:** This is a work-in-progress project. Many features are planned but not yet implemented. Check the project structure above to see what's currently available vs. what's planned.

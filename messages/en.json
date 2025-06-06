@@ -1,0 +1,31 @@
+{
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  },
+  "Navigation": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "Home": {
+    "title": "Welcome to TaskHub",
+    "description": "Manage your tasks efficiently"
+  },
+  "Tasks": {
+    "title": "Tasks",
+    "createNew": "Create New Task",
+    "noTasks": "No tasks found",
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    }
+  }
+}
