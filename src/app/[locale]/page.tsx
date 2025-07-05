@@ -14,6 +14,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-[calc(100vh-64px)]">
       <h1>{t("title")}</h1>
+      <p>{t("description")}</p>
     </div>
   );
 }

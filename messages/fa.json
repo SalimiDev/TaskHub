@@ -8,15 +8,39 @@
     "edit": "ویرایش",
     "close": "بستن"
   },
+  "LocaleLayout": {
+    "title": "لی اوت لوکال",
+    "description": "این لی اوت لوکال است"
+  },
+  "LocaleSwitcher": {
+    "label": "تغییر زبان",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fa {🇮🇷 فارسی} other {Unknown}}"
+  },
   "Navigation": {
     "home": "خانه",
-    "tasks": "وظایف",
-    "profile": "پروفایل",
-    "settings": "تنظیمات"
+    "pathnames": "نام‌های مسیر"
+  },
+  "IndexPage": {
+    "description": "این یک مثال ساده است که نشان می‌دهد استفاده از <code>next-intl</code> با Next.js App Router. سعی کنید تغییرات را در گوشه بالا سمت راست و ببینید که چگونه محتوا تغییر می‌کند.",
+    "title": "مثال next-intl"
   },
   "Home": {
     "title": "به TaskHub خوش آمدید",
     "description": "وظایف خود را به صورت مؤثر مدیریت کنید"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "بیشتر بدانید در مورد next-intl در مستندات رسمی.",
+        "href": "https://next-intl.dev",
+        "title": "مستندات"
+      },
+      "source": {
+        "description": "مرور کد منبع این مثال در GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+        "title": "کد منبع"
+      }
+    }
   },
   "Tasks": {
     "title": "وظایف",
