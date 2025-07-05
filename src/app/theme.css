@@ -149,6 +149,7 @@
   --color-border-color: var(--border-color);
   --color-border-color-translucent: var(--border-color-translucent);
 
+  --radius-*: initial;
   --radius-sm: var(--border-radius-sm);
   --radius-md: var(--border-radius);
   --radius-lg: var(--border-radius-lg);
