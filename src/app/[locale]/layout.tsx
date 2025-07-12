@@ -43,7 +43,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <main>{children}</main>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
