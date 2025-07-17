@@ -168,3 +168,10 @@
   --font-sans-serif: var(--font-sans-serif);
   --font-monospace: var(--font-monospace);
 }
+
+/* ===========================
+    Safelist for dynamic classes
+   =========================== */
+@source inline("{bg-primary-subtle,bg-secondary-subtle,bg-tertiary-subtle,bg-quaternary-subtle,bg-quinary-subtle,bg-success-subtle,bg-info-subtle,bg-warning-subtle,bg-danger-subtle}");
+@source inline("{text-primary,text-primary-subtle,text-secondary,text-secondary-subtle,text-tertiary,text-tertiary-subtle,text-quaternary,text-quaternary-subtle,text-quinary,text-quinary-subtle,text-success,text-success-subtle,text-info,text-info-subtle,text-warning,text-warning-subtle,text-danger,text-danger-subtle}");
+@source inline("{border-primary,border-primary-subtle,border-secondary,border-secondary-subtle,border-tertiary,border-tertiary-subtle,border-quaternary,border-quaternary-subtle,border-quinary,border-quinary-subtle,border-success,border-success-subtle,border-info,border-info-subtle,border-warning,border-warning-subtle,border-danger,border-danger-subtle}");
