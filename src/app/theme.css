@@ -171,7 +171,13 @@
 
 /* ===========================
     Safelist for dynamic classes
-   =========================== */
+    =========================== */
 @source inline("{bg-primary-subtle,bg-secondary-subtle,bg-tertiary-subtle,bg-quaternary-subtle,bg-quinary-subtle,bg-success-subtle,bg-info-subtle,bg-warning-subtle,bg-danger-subtle}");
-@source inline("{text-primary,text-primary-subtle,text-secondary,text-secondary-subtle,text-tertiary,text-tertiary-subtle,text-quaternary,text-quaternary-subtle,text-quinary,text-quinary-subtle,text-success,text-success-subtle,text-info,text-info-subtle,text-warning,text-warning-subtle,text-danger,text-danger-subtle}");
-@source inline("{border-primary,border-primary-subtle,border-secondary,border-secondary-subtle,border-tertiary,border-tertiary-subtle,border-quaternary,border-quaternary-subtle,border-quinary,border-quinary-subtle,border-success,border-success-subtle,border-info,border-info-subtle,border-warning,border-warning-subtle,border-danger,border-danger-subtle}");
+@source inline("{text-primary,text-primary-subtle,text-secondary-subtle,text-tertiary-subtle,text-quaternary-subtle,text-quinary-subtle,text-success-subtle,text-info-subtle,text-warning-subtle,text-danger-subtle}");
+@source inline("{border-primary-subtle,border-secondary-subtle,border-tertiary-subtle,border-quaternary,border-quaternary-subtle,border-quinary-subtle,border-success-subtle,border-info-subtle,border-warning-subtle,border-danger-subtle}");
+@source inline("{hover:,focus:,}bg-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}");
+@source inline("{hover:,focus:,}text-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}");
+@source inline("{hover:,focus:,}border-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}");
+@source inline("{hover:,focus:,}bg-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}-subtle");
+@source inline("{hover:,focus:,}text-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}-subtle");
+@source inline("{hover:,focus:,}border-{primary,secondary,tertiary,quaternary,quinary,success,info,warning,danger}-subtle");
