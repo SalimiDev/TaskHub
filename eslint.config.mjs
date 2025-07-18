@@ -3,6 +3,7 @@ import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
+import importPlugin from "eslint-plugin-import";
 
 export default [
   {
@@ -23,6 +24,7 @@ export default [
       "@typescript-eslint": tsPlugin,
       react: reactPlugin,
       "react-hooks": reactHooksPlugin,
+      import: importPlugin,
     },
     languageOptions: {
       parser: tsParser,
@@ -42,6 +44,12 @@ export default [
     settings: {
       react: {
         version: "detect",
+      },
+      "import/resolver": {
+        typescript: {
+          project: ["./tsconfig.json"],
+          alwaysTryTypes: true,
+        },
       },
     },
     rules: {
