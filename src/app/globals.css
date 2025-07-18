@@ -1,10 +1,10 @@
-@import "tailwindcss";
 @import "./theme.css";
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
 body {
-  background: var(--body-background);
+  background: var(--primary-background);
   color: var(--text-content);
   font-family: var(--body-font-family);
   transition:
