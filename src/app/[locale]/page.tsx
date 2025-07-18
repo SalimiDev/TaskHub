@@ -1,4 +1,3 @@
-import { Button } from "@radix-ui/themes";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -16,7 +15,6 @@ export default async function Home() {
     <div className="flex h-[calc(100vh-64px)] flex-col items-center justify-center gap-4">
       <h1>{t("title")}</h1>
       <p>{t("description")}</p>
-      <Button variant="surface">Click me</Button>
     </div>
   );
 }
