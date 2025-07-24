@@ -1,7 +1,7 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import { colors } from "../../../constants/colors";
 
-type Color = (typeof colors)[number];
+type Color = (typeof colors)[number] | "white" | "black";
 
 export const loading = tv({
   base: [
