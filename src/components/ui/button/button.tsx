@@ -1,8 +1,8 @@
 "use client";
 
-import { button } from "./button.styles";
-import { Spinner } from "@radix-ui/themes";
+import { button } from "./button.variants";
 import { ButtonProps } from "./button.types";
+import { Loading } from "../loading";
 
 const Button = ({
   children,
@@ -13,6 +13,8 @@ const Button = ({
   radius,
   loading = false,
   disabled = false,
+  loadingColor,
+  loadingVariant,
   className,
   ...rest
 }: ButtonProps) => {
@@ -30,7 +32,11 @@ const Button = ({
     <button className={base()} type={type} {...rest}>
       <span className={content()}>{children}</span>
       <span className={spinner()}>
-        <Spinner size="1" />
+        <Loading
+          size={size}
+          color={loadingColor ? loadingColor : variant !== "solid" ? color : "white"}
+          variant={loadingVariant}
+        />
       </span>
     </button>
   );

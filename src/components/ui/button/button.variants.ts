@@ -33,7 +33,7 @@ export const button = tv({
       tiny: "px-1.5 py-1 text-xs h-6 w-fit",
       small: "px-2 py-1 text-sm h-8 w-fit",
       normal: "px-2.5 py-1 text-md h-10 w-fit",
-      large: "px-3 py-1 text-lg h-12 w-fit",
+      large: "px-3 py-1 text-lg h-10 w-fit",
     },
 
     radius: {
