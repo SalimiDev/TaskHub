@@ -12,7 +12,7 @@ export default async function Home() {
   const t = await getTranslations("Home");
 
   return (
-    <div className="flex h-[calc(100vh-64px)] flex-col items-center justify-center gap-4">
+    <div>
       <h1>{t("title")}</h1>
       <p>{t("description")}</p>
     </div>

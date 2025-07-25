@@ -42,10 +42,12 @@
       }
     }
   },
-  "Tasks": {
-    "title": "Tasks",
+  "TodoListPage": {
+    "title": "Todo List",
     "createNew": "Create New Task",
     "noTasks": "No tasks found",
+    "noTasksFound": "No tasks found",
+
     "status": {
       "pending": "Pending",
       "inProgress": "In Progress",

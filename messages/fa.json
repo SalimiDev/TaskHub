@@ -42,10 +42,11 @@
       }
     }
   },
-  "Tasks": {
-    "title": "وظایف",
+  "TodoListPage": {
+    "title": "لیست وظایف",
     "createNew": "ایجاد وظیفه جدید",
     "noTasks": "هیچ وظیفه‌ای یافت نشد",
+    "noTasksFound": "هیچ وظیفه‌ای یافت نشد",
     "status": {
       "pending": "در انتظار",
       "inProgress": "در حال انجام",

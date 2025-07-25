@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  background: var(--primary-background);
+  background: var(--body-background);
   color: var(--text-content);
   font-family: var(--body-font-family);
   transition:
