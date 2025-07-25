@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import SidebarHeader from "./SidebarHeader";
 import SidebarList from "./SidebarList";
 import { TodoList } from "../../_types/todolist.types";
+import SidebarFooter from "./SidebarFooter";
 
 export default function SidebarContainer() {
   const [selectedListId, setSelectedListId] = useState<number | undefined>();
@@ -20,7 +21,7 @@ export default function SidebarContainer() {
     <div className="bg-primary-background flex h-full flex-col rounded-[var(--radius-lg)]">
       <SidebarHeader onAddNewList={handleAddNewList} />
       <SidebarList onListSelect={handleListSelect} selectedListId={selectedListId} />
-      {/* <SidebarFooter /> */}
+      <SidebarFooter />
     </div>
   );
 }
