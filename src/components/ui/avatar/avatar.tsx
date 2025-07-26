@@ -1,4 +1,4 @@
-import { avatar } from "./avatar.styles";
+import { avatar } from "./avatar.variants";
 import { AvatarProps } from "./avatar.types";
 
 const Avatar = ({
