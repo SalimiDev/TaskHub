@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { AvatarVariants } from "./avatar.styles";
+import { AvatarVariants } from "./avatar.variants";
 
 export type AvatarProps = {
   fallback: ReactNode | string;

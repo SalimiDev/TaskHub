@@ -1,4 +1,4 @@
-import { badge } from "./badge.styles";
+import { badge } from "./badge.variants";
 import { BadgeProps } from "./badge.type";
 
 const Badge = ({ children, variant, color, size, radius, className, ...rest }: BadgeProps) => {
